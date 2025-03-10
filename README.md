@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-./rating container screenshot
+[./rating container screenshot](https://github.com/MaddiePst/Interactive-Rating-Component.github.io/blob/main/Rating%20Container.png)
+[./thanktou container screenShoy](https://github.com/MaddiePst/Interactive-Rating-Component.github.io/blob/main/Thank%20you%20Container.png)
 
 ### Links
 
