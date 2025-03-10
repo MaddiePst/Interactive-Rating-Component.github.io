@@ -72,7 +72,7 @@ MDN Web Docs - Comprehensive resource for HTML, CSS, and JavaScript.
 
 - Website - [Madalina Pastiu](https://maddiepst.github.io/)
 - Frontend Mentor - [@MaddiePst](https://www.frontendmentor.io/profile/MaddiePst)
-- LinkenIn - (https://www.linkedin.com/in/madalina-pastiu-52a01396/)
+- LinkenIn - [Madalina Pastiu](https://www.linkedin.com/in/madalina-pastiu-52a01396/)
 
 ## Acknowledgments
 
