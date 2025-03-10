@@ -1,0 +1,292 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --h-text: hsl(0, 0%, 100%);
+  --container-text: hsl(217, 12%, 63%);
+  --container-color: hsl(213, 19%, 18%);
+  --background-color: hsl(216, 12%, 8%);
+  --accent-background-color: hsl(220, 30%, 30%);
+}
+
+* {
+  font-family: "Overpass", serif;
+  font-optical-sizing: auto;
+  font-weight: 400, 700;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--background-color);
+  font-size: 15px;
+}
+
+a,
+.attribution {
+  color: var(--accent-background-color);
+}
+
+.rating-container,
+.thank-you-container {
+  background-color: var(--container-color);
+  text-align: center;
+  color: var(--container-text);
+  box-sizing: border-box;
+  width: 35%;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 5%;
+  padding: 2rem 3rem;
+}
+
+.rating-container {
+  text-align: left;
+}
+
+h2,
+h3,
+.rate {
+  color: var(--h-text);
+}
+
+.rating {
+  margin: 1.5rem;
+  margin-left: 0;
+  display: flex;
+  gap: 1.7rem;
+}
+
+.star-svg,
+.rate {
+  background-color: var(--accent-background-color);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.rate {
+  font-size: 1.2rem;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: 0;
+  border: none;
+  padding: 0.8rem 1.2rem;
+}
+
+.rate:hover {
+  cursor: pointer;
+  background-color: var(--h-text);
+  color: var(--background-color);
+}
+
+.rate:active {
+  background-color: var(--orange);
+  color: var(--background-color);
+}
+
+/* Why the rate:visited doesn't work????
+*/
+.rate:focus {
+  background-color: var(--orange);
+  color: var(--background-color);
+}
+
+.btn-container {
+  align-items: center;
+}
+
+.submit-btn {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--orange);
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 9rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--h-text);
+  cursor: pointer;
+}
+
+.your-rating-selection {
+  display: inline-block;
+  background-color: var(--accent-background-color);
+  color: var(--orange);
+  text-align: center;
+  margin: 0.8rem 0 1rem 0;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+}
+
+.attribution {
+  text-align: end;
+}
+
+.hidden {
+  display: none;
+}
+
+.text {
+  margin: 1.8rem 1rem;
+}
+
+@media (max-width: 1154px) {
+  body {
+    font-size: 13px;
+  }
+  .rating-container,
+  .thank-you-container {
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+  }
+  .rating {
+    margin: 1.5rem;
+    margin-left: 0;
+    gap: 1.5rem;
+  }
+  .rate {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.9rem 9rem;
+  }
+}
+
+@media (max-width: 1074px) {
+  .star-svg {
+    padding: 0.8rem;
+  }
+  .rating {
+    margin: 1.2rem;
+    gap: 1rem;
+  }
+  .rate {
+    padding: 0.7rem 0.7rem;
+  }
+  .submit-btn {
+    padding: 0.9rem 8rem;
+  }
+}
+
+@media (max-width: 965px) {
+  .rating-container,
+  .thank-you-container {
+    margin-top: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+  .rating {
+    margin: 1rem;
+    gap: 0.8rem;
+  }
+  .rate {
+    font-size: 0.8rem;
+    width: 30%;
+  }
+  .submit-btn {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    padding: 0.8rem 7rem;
+  }
+  .star-svg {
+    padding: 0.6rem;
+  }
+}
+@media (max-width: 833px) {
+  body {
+    font-size: 10px;
+  }
+  .rating-container,
+  .thank-you-container {
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .rating {
+    margin: 0.5rem;
+  }
+  .rate {
+    padding: 0.7rem 0.5rem;
+  }
+  .submit-btn {
+    font-size: 0.7rem;
+    padding: 0.8rem 6.5rem;
+  }
+  .star-svg {
+    padding: 0.4rem;
+  }
+}
+@media (max-width: 750px) {
+  .rating {
+    gap: 0.6rem;
+  }
+  .rate {
+    padding: 0.5rem 0.3rem;
+  }
+  .submit-btn {
+    padding: 0.8rem 5.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .rating {
+    margin-top: 3rem;
+  }
+  .rate {
+    padding: 0.4rem 0.5rem;
+  }
+  .submit-btn {
+    padding: 0.7rem 4.5rem;
+  }
+}
+@media (max-width: 570px) {
+  body {
+    font-size: 8px;
+  }
+
+  .rating-container,
+  .thank-you-container {
+    margin-top: 0.8rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .rating {
+    margin: 0.3rem;
+  }
+  .rate {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.3rem;
+  }
+  .submit-btn {
+    font-size: 0.5rem;
+    padding: 0.4rem 3.5rem;
+  }
+  .star-svg {
+    padding: 0.3rem;
+  }
+  .text {
+    margin: 0.8rem 0.4rem;
+  }
+}
+@media (max-width: 570px) {
+  body {
+    font-size: 7px;
+  }
+
+  .rating-container,
+  .thank-you-container {
+    margin-top: 0.5rem;
+  }
+  .rating {
+    margin: 0.2rem;
+  }
+  .rate {
+    font-size: 0.4rem;
+    padding: 0.1rem 0.1rem;
+  }
+  .submit-btn {
+    font-size: 0.4rem;
+    padding: 0.4rem 3rem;
+  }
+  .star-svg {
+    padding: 0.2rem;
+  }
+}
