@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--background-color);
-  font-size: 15px;
+  font-size: 10px;
 }
 
 a,
@@ -30,11 +30,10 @@ a,
   text-align: center;
   color: var(--container-text);
   box-sizing: border-box;
-  width: 35%;
+  width: 80%;
   margin: auto;
-  margin-top: 5rem;
-  border-radius: 5%;
-  padding: 2rem 3rem;
+  border-radius: 8%;
+  padding: 0.8rem 1rem;
 }
 
 .rating-container {
@@ -48,27 +47,25 @@ h3,
 }
 
 .rating {
-  margin: 1.5rem;
+  margin: 1.2rem;
   margin-left: 0;
   display: flex;
-  gap: 1.7rem;
+  gap: 2rem;
 }
 
 .star-svg,
 .rate {
   background-color: var(--accent-background-color);
-  padding: 1rem;
-  border-radius: 100%;
+  padding: 0.3rem 0.5rem;
+  border-radius: 60%;
 }
 
 .rate {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-decoration: none;
   box-sizing: border-box;
-  width: 100%;
-  margin-left: 0;
+  width: 60%;
   border: none;
-  padding: 0.8rem 1.2rem;
 }
 
 .rate:hover {
@@ -82,25 +79,20 @@ h3,
   color: var(--background-color);
 }
 
-/* Why the rate:visited doesn't work????
-*/
 .rate:focus {
   background-color: var(--orange);
   color: var(--background-color);
 }
 
-.btn-container {
-  align-items: center;
-}
-
 .submit-btn {
   display: flex;
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 500;
   background-color: var(--orange);
   border-radius: 50px;
   border: none;
-  padding: 1rem 9rem;
+  margin: 0 auto;
+  padding: 0.7rem 6.5rem;
 }
 
 .submit-btn:hover {
@@ -109,13 +101,18 @@ h3,
 }
 
 .your-rating-selection {
-  display: inline-block;
+  display: inline;
   background-color: var(--accent-background-color);
   color: var(--orange);
   text-align: center;
-  margin: 0.8rem 0 1rem 0;
-  padding: 0.6rem 1.5rem;
+  margin: 0.8rem 0;
+  padding: 0.6rem 1.2rem;
   border-radius: 30px;
+}
+
+.thank-you-svg {
+  display: block;
+  margin: 0.8rem auto 2rem;
 }
 
 .attribution {
@@ -127,166 +124,143 @@ h3,
 }
 
 .text {
-  margin: 1.8rem 1rem;
+  margin: 0.5rem 1rem;
 }
 
-@media (max-width: 1154px) {
+/* footer {
+  text-align: end;
+} */
+
+@media (min-width: 424px) {
   body {
-    font-size: 13px;
+    font-size: 11px;
   }
-  .rating-container,
-  .thank-you-container {
-    margin-top: 3rem;
-    padding: 2rem 1.5rem;
-  }
-  .rating {
-    margin: 1.5rem;
-    margin-left: 0;
-    gap: 1.5rem;
-  }
-  .rate {
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-  }
-  .submit-btn {
-    font-size: 0.9rem;
-    padding: 0.9rem 9rem;
-  }
-}
-
-@media (max-width: 1074px) {
   .star-svg {
-    padding: 0.8rem;
+    padding: 0.5rem 0.6rem;
   }
-  .rating {
-    margin: 1.2rem;
-    gap: 1rem;
-  }
-  .rate {
-    padding: 0.7rem 0.7rem;
-  }
-  .submit-btn {
-    padding: 0.9rem 8rem;
-  }
-}
 
-@media (max-width: 965px) {
   .rating-container,
   .thank-you-container {
-    margin-top: 1.5rem;
-    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    padding: 1rem 1rem;
   }
   .rating {
     margin: 1rem;
-    gap: 0.8rem;
+    margin-left: 0;
+    gap: 1.7rem;
   }
   .rate {
-    font-size: 0.8rem;
-    width: 30%;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
   }
   .submit-btn {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    padding: 0.8rem 7rem;
-  }
-  .star-svg {
-    padding: 0.6rem;
+    font-size: 0.9rem;
+    padding: 0.7rem 7.5rem;
   }
 }
-@media (max-width: 833px) {
+
+@media (min-width: 517px) {
   body {
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .star-svg {
+    padding: 0.7rem 0.7rem;
   }
   .rating-container,
   .thank-you-container {
-    margin-top: 1rem;
-    padding: 1rem 0.5rem;
+    margin: 1rem auto;
+    width: 70%;
   }
+
   .rating {
-    margin: 0.5rem;
+    margin: 1.3rem;
+    margin-left: 0;
+    gap: 1.8rem;
   }
   .rate {
-    padding: 0.7rem 0.5rem;
-  }
-  .submit-btn {
-    font-size: 0.7rem;
-    padding: 0.8rem 6.5rem;
-  }
-  .star-svg {
-    padding: 0.4rem;
-  }
-}
-@media (max-width: 750px) {
-  .rating {
-    gap: 0.6rem;
-  }
-  .rate {
+    font-size: 1.2rem;
     padding: 0.5rem 0.3rem;
   }
   .submit-btn {
-    padding: 0.8rem 5.5rem;
-  }
-}
-@media (max-width: 750px) {
-  .rating {
-    margin-top: 3rem;
-  }
-  .rate {
-    padding: 0.4rem 0.5rem;
-  }
-  .submit-btn {
-    padding: 0.7rem 4.5rem;
-  }
-}
-@media (max-width: 570px) {
-  body {
-    font-size: 8px;
-  }
-
-  .rating-container,
-  .thank-you-container {
-    margin-top: 0.8rem;
-    padding: 0.5rem 0.5rem;
-  }
-  .rating {
-    margin: 0.3rem;
-  }
-  .rate {
-    font-size: 0.6rem;
-    padding: 0.2rem 0.3rem;
-  }
-  .submit-btn {
-    font-size: 0.5rem;
-    padding: 0.4rem 3.5rem;
-  }
-  .star-svg {
-    padding: 0.3rem;
+    font-size: 0.9rem;
+    padding: 0.7rem 8.5rem;
   }
   .text {
-    margin: 0.8rem 0.4rem;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 570px) {
-  body {
-    font-size: 7px;
-  }
-
+@media (min-width: 620px) {
   .rating-container,
   .thank-you-container {
-    margin-top: 0.5rem;
+    margin: 3rem auto;
+    width: 60%;
+  }
+}
+@media (min-width: 739px) {
+  .rating-container,
+  .thank-you-container {
+    width: 50%;
   }
   .rating {
-    margin: 0.2rem;
-  }
-  .rate {
-    font-size: 0.4rem;
-    padding: 0.1rem 0.1rem;
+    gap: 1.7rem;
   }
   .submit-btn {
-    font-size: 0.4rem;
-    padding: 0.4rem 3rem;
+    font-size: 1rem;
+    padding: 0.8rem 8.5rem;
   }
+}
+@media (min-width: 860px) {
+  .rating-container,
+  .thank-you-container {
+    margin: 4rem auto;
+    width: 40%;
+  }
+  .rating {
+    gap: 1.4rem;
+  }
+  .rate {
+    font-size: 1.3rem;
+  }
+  .submit-btn {
+    padding: 0.8rem 8rem;
+  }
+}
+
+@media (min-width: 1010px) {
   .star-svg {
-    padding: 0.2rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .rating-container,
+  .thank-you-container {
+    margin: 5rem auto;
+    padding: 1.5rem 0.8rem;
+  }
+  .rating {
+    margin: 1.2rem;
+    gap: 2rem;
+  }
+  .rate {
+    font-size: 1.4rem;
+    width: 30%;
+  }
+  .submit-btn {
+    padding: 0.9rem 10rem;
+  }
+}
+@media (min-width: 1150px) {
+  .star-svg {
+    padding: 0.9rem 0.9rem;
+  }
+  .rating-container,
+  .thank-you-container {
+    margin: 6rem auto;
+    padding: 1.8rem 0.9rem;
+    width: 30%;
+  }
+  .rating {
+    gap: 1.5rem;
+  }
+  .submit-btn {
+    padding: 0.9rem 8rem;
   }
 }

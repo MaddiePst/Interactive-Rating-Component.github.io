@@ -29,13 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![./rating container screenshot](https://github.com/MaddiePst/Interactive-Rating-Component.github.io/blob/main/Rating%20Container.png)
-![./thanktou container screenShoy](https://github.com/MaddiePst/Interactive-Rating-Component.github.io/blob/main/Thank%20you%20Container.png)
+./rating container screenshot
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
-- Live Site URL: [Live site URL ](https://maddiepst.github.io/Interactive-Rating-Component.github.io/)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
